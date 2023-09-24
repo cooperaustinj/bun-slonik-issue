@@ -1,7 +1,7 @@
 import { createPool, createSqlTag } from 'slonik'
 import { z } from 'zod'
 
-const DATABASE_URL = process.env.DATABASE_URL || ''
+const DATABASE_URL = process.env.DATABASE_URL
 
 if (!DATABASE_URL) throw new Error('DATABASE_URL is not set')
 
