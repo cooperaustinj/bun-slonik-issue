@@ -1,18 +1,18 @@
 {
-  "name": "bun-test",
-  "module": "index.ts",
-  "type": "module",
-  "scripts": {
-    "dev": "bun src/index.ts"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "slonik": "^34.1.1",
-    "zod": "^3.22.2"
-  }
+    "name": "bun-test",
+    "module": "index.ts",
+    "type": "module",
+    "scripts": {
+        "dev": "bun src/database.ts"
+    },
+    "devDependencies": {
+        "bun-types": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "slonik": "^34.1.1",
+        "zod": "^3.22.2"
+    }
 }

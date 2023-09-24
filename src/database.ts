@@ -9,15 +9,10 @@ export const databasePool = await createPool(DATABASE_URL)
 
 const sql = createSqlTag({
     typeAliases: {
-        // `foo` is a documentation specific example
-        foo: z.object({
-            foo: z.string(),
+        val: z.object({
+            val: z.number(),
         }),
-        id: z.object({
-            id: z.number(),
-        }),
-        void: z.object({}).strict(),
     },
 })
 
-databasePool.query(sql.typeAlias('id')`select 1 as id`)
+databasePool.query(sql.typeAlias('val')`select 1 as val`)
